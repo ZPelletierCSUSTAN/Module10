@@ -25,3 +25,7 @@ class SchoolTasks(Todo):
             else:
                 string += f"Task {index} Task: {task_item}\n"
         return string
+
+if __name__ == "__main__":
+    tasks = SchoolTasks([("11/4/2025", "Write Essay"), ("11/4/2025", "Read Chapter 10")])
+    print(tasks)
