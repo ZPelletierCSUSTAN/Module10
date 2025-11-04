@@ -1,0 +1,20 @@
+def main():
+    #The Todo class
+    from todo import Todo
+    todo = Todo()
+    todo.addTask("Make the bed")
+    todo.addTask("Do homework")
+    todo.addTask("Check email")
+    print(repr(todo))
+    
+    #The SchoolTask class
+    from schooltasks import SchoolTasks
+    school = SchoolTasks()
+    school.addTask("11/4/2025", "Write Essay")
+    school.addTask("11/4/2025", "Read Chapter 10")
+    school.addTask("11/4/2025", "Complete Online Programming Quiz")
+    print(repr(school))
+    print(school)
+
+
+main()
