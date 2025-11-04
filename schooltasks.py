@@ -1,9 +1,18 @@
-from todo import Todo
+class Todo:
+    def __init__(self):
+        self._task_list = []
+
+    def addTask(self, task):
+        self._task_list.append(task)
+
+    def __repr__(self):
+        return f"Task List: {self._task_list}"
 
 class SchoolTasks(Todo):
-    def __init__(self):
+    def __init__(self, initial_data=None):
         super().__init__()
-    
+        self.initial_data = initial_data
+
     def addTask(self, task_date, task):
         self._task_list.append((task_date, task))
     
